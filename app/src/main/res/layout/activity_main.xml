@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#858481"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bac"
+        android:layout_width="wrap_content"
+        android:layout_height="261dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="48dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/i2"
+            android:layout_width="296dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/enter_2nd_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/i1"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/enter_1st_number"
+            app:layout_constraintTop_toBottomOf="@+id/i2"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/i3"
+            android:layout_width="298dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/employee_code_a_b"
+            app:layout_constraintTop_toBottomOf="@+id/i1"
+            tools:layout_editor_absoluteX="-1dp" />
+
+        <EditText
+            android:id="@+id/i4"
+            android:layout_width="298dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/state_cdde_n_p"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/i3"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bac"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="102dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/ans11"
+            android:layout_width="295dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/regular_pay"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ans22"
+            android:layout_width="297dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/over_time_pay"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ans11" />
+
+        <TextView
+            android:id="@+id/ans44"
+            android:layout_width="297dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:text="Tax"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ans22" />
+
+        <TextView
+            android:id="@+id/ans55"
+            android:layout_width="297dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/over_time_pay"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ans44" />
+
+        <TextView
+            android:id="@+id/ans33"
+            android:layout_width="297dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/net_pay"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ans55" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="132dp"
+        android:text="Payroll Sytem"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/commpute" />
+
+
+</RelativeLayout>

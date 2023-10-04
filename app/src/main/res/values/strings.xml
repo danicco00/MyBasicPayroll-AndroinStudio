@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">fourthactivity</string>
+    <string name="enter_1st_number">Enter Number of Hours Worked</string>
+    <string name="enter_2nd_number">Enter Pay Rate</string>
+    <string name="result">Result</string>
+    <string name="metro_manila">Metro Manila</string>
+    <string name="province">Province</string>
+    <string name="regular">Regular</string>
+    <string name="contractual">Contractual</string>
+    <string name="over_time_pay">Over Time Pay</string>
+    <string name="regular_pay">Regular pay</string>
+    <string name="commpute">Commpute</string>
+    <string name="gross_pay">Gross Pay</string>
+    <string name="blank" />
+    <string name="employee_code_a_b">Employee Code(A/B):</string>
+    <string name="state_cdde_n_p">State Cdde(N/P):</string>
+    <string name="net_pay">Net pay:</string>
+</resources>
